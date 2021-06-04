@@ -3,6 +3,7 @@ function fetchBooks() {
   .then(function(response) {
     
   })
+  .then(fun)
   
 }
 
