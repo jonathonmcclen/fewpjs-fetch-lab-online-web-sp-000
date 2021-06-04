@@ -4,10 +4,18 @@ function fetchBooks() {
     return response.json();
   })
   .then(function(json){
-    renderBooks(json)
+    return renderBooks(json)
   })
   
 }
+
+fetch("string representing a URL to a data source")
+.then(function(response) {
+  return response.json();
+})
+.then(function(json){
+  // Use the data inside of `json` to do DOM manipulation
+})
 
 function renderBooks(books) {
   const main = document.querySelector('main');
